@@ -1,0 +1,272 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url('images/bats.gif');
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat;
+    background-size: 30%;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: bold;
+}
+
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 15px 15px black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#fedea2, #a76d00);
+    padding: 10px 20px;
+    color: black;
+}
+
+
+header img {
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header p {
+    margin: 0;
+    font-weight: bold;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+/* Each main menu item should be relatively positioned */
+nav ul li {
+    position: relative;
+  }
+  
+  /* Submenu positioning */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;   
+    right: auto;         
+    background-color: black;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+    z-index: 10;
+  }
+nav ul.menu li ul.submenu li {
+  width: 100%; 
+}
+nav ul li .submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  } ul li .submenu li a:hover {
+    background-color: gray;
+    color: white
+  }
+  
+nav ul.menu li:hover .submenu {
+    display: block;
+  }
+  
+   
+.category {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle; 
+}
+nav ul li {
+    margin:0;
+    padding: 0;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 30px;
+    height: 50px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+nav ul li:first-child a:hover {
+    color: #f7941d;
+    background-color: black;
+}
+nav ul li:nth-child(2) a:hover {
+    color: #f7941d;
+    background-color: gray;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: gray;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+aside button {
+    background-color: orange;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+
+aside button:hover {
+    color: green;
+}
+/* main {
+    flex-grow: 1;
+    text-align: left;
+} */
+/* main h2{
+  margin-left: 10px;
+} */
+
+/* Structure around main content */
+.content-wrapper {
+  display: flex;
+  padding: 20px;
+}
+
+/* Left sidebar buttons */
+aside {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+aside button {
+  background-color: orange;
+  border: 2px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+}
+
+aside button:hover {
+  color: green;
+}
+
+/* Main layout */
+/* main {
+  flex-grow: 1;
+} */
+
+
+
+/* Main product content */
+main {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-right: 240px; /* leave space for the right sidebar */
+}
+
+
+.product img {
+  margin-right: 15px;
+    width: 150px;
+    display: block;
+    margin: 10px 0;
+}
+.product p{
+  margin: 0;
+}
+
+.right-menu {
+    position:relative;
+    top: -7.4%;
+    right: -14.3%;
+    width: 400px;
+    background-color: #f4c27a;
+    padding:20px;
+  
+}
+
+.right-menu h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.recommend {
+   
+    margin-bottom: 15px;
+}
+
+.recommend img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.recommend a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+.recommend a:hover{
+  color: green;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(#fedea2, #a76d00);
+    
+    padding: 10px;
+    font-size: 0.9em;
+    border-top: 2px solid black;
+}
